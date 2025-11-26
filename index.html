@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programa Viaja + - Democratizando o turismo interno brasileiro através de incentivos governamentais">
+    <link rel ="stylesheet" href="style.css">
+    <title>Programa Viaja + - Governo Federal do Brasil</title>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-imagem">
+                    <img src="./img/logo.png" alt="Viaja +" class="logo-programa">
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="sobrenos.html">Nossa Equipe</a></li>
+                    <li><a href="viagens.html">Destinos</a></li>
+                    <li><a href="como-participar.html">Como Participar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-principal').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-principal').classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+
+    <!-- Hero Carousel -->
+    <section id="inicio" class="hero-carousel">
+        <div class="carousel-slide"><img src="./img/criancaviaja.png" alt="Criança viajando"></div>
+        <div class="carousel-slide"><img src="./img/familiaviaja.webp" alt="Família viajando"></div>
+        <div class="carousel-slide"><img src="./img/familianegra.png" alt="Família negra viajando"></div>
+        <div class="carousel-slide"><img src="./img/familiabrasil.jpg" alt="Família brasileira"></div>
+
+        <div class="hero-content">
+            <img src="./img/Untitled design (2).png" alt="Logo Viaja+" class="logo-hero">
+            <p>Turismo com inclusão, acesso e oportunidades para todas as famílias brasileiras.</p>
+            <a href="#cadastro" class="hero-btn">Fazer Cadastro</a>
+        </div>
+    </section>
+
+    <!-- Seção O que é o Programa -->
+    <section class="secao viajar-mais">
+        <div class="container">
+            <h2 class="texto-centralizado">O que é o Programa Viaja +?</h2>
+            <p class="texto-centralizado mb-3">
+                Uma iniciativa do Governo Federal que incentiva o turismo interno,
+                amplia o acesso às viagens e fortalece o desenvolvimento econômico e cultural do Brasil.
+            </p>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/viagem.jpg" alt="Família brasileira viajando">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Ampliação do Acesso</h3>
+                        <p class="card-texto">
+                            Facilita que mais pessoas viajem pelo país por meio de iniciativas 
+                            que democratizam o turismo para todas as famílias brasileiras.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/moeda.jpg" alt="Desenvolvimento econômico local">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Desenvolvimento Regional</h3>
+                        <p class="card-texto">
+                            Incentiva o crescimento de hotéis, restaurantes, comércios locais 
+                            e serviços turísticos em todo o território nacional.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/valorização.jpg" alt="Cultura brasileira">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3 class="card-titulo">Valorização Cultural</h3>
+                        <p class="card-texto">
+                            Promove a descoberta de novos destinos, tradições regionais 
+                            e experiências únicas da cultura brasileira.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="participar" class="secao secao-cinza">
+        <div class="container">
+            <h2 class="texto-centralizado">Como Funciona o Programa</h2>
+            <p class="texto-centralizado mb-3">
+                O Viaja + oferece benefícios progressivos de acordo com a renda familiar
+            </p>
+            
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="card-badge">Passo 1</div>
+                        <h4 class="card-titulo">Cadastro Nacional</h4>
+                        <p class="card-texto">
+                            Realize seu cadastro informando CPF, renda familiar e composição 
+                            do núcleo familiar. O processo é totalmente digital e gratuito.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="card-badge">Passo 2</div>
+                        <h4 class="card-titulo">Análise de Elegibilidade</h4>
+                        <p class="card-texto">
+                            O sistema calcula automaticamente seu percentual de desconto 
+                            baseado na renda per capita familiar declarada.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="card-badge">Passo 3</div>
+                        <h4 class="card-titulo">Escolha seu Destino</h4>
+                        <p class="card-texto">
+                            Navegue pelos destinos parceiros em todas as regiões do Brasil 
+                            e escolha onde sua família quer viajar.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="card-badge">Passo 4</div>
+                        <h4 class="card-titulo">Descontos Aplicados</h4>
+                        <p class="card-texto">
+                            Receba descontos em passagens, hospedagem e alimentação de acordo 
+                            com sua faixa de renda. Viaje pagando menos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="secao secao-azul">
+        <div class="container">
+            <h2 class="texto-centralizado">Impacto do Programa</h2>
+            <p class="texto-centralizado mb-3">
+                Números que demonstram a transformação do turismo brasileiro
+            </p>
+            
+            <div class="estatisticas">
+                <div class="estatistica-item">
+                    <div class="estatistica-numero">2.5M+</div>
+                    <div class="estatistica-label">Famílias Cadastradas</div>
+                </div>
+                
+                <div class="estatistica-item">
+                    <div class="estatistica-numero">500</div>
+                    <div class="estatistica-label">Destinos Parceiros</div>
+                </div>
+                
+                <div class="estatistica-item">
+                    <div class="estatistica-numero">R$450M</div>
+                    <div class="estatistica-label">Investidos em Turismo</div>
+                </div>
+                
+                <div class="estatistica-item">
+                    <div class="estatistica-numero">65%</div>
+                    <div class="estatistica-label">Desconto Médio Aplicado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios detalhados -->
+    <section class="secao">
+        <div class="container">
+            <h2 class="texto-centralizado">Benefícios do Programa Viaja +</h2>
+            <p class="texto-centralizado texto-destaque mb-3">
+                Viaje em família e aproveite vantagens em todos os aspectos da sua viagem
+            </p>
+            
+            <div class="grid grid-3 mt-3">
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/4.jpg" alt="Família viajando feliz">
+                    </div>
+                    <div class="card-conteudo">
+                        <div class="card-badge card-badge-amarelo">Até 80% OFF</div>
+                        <h3 class="card-titulo">Descontos Progressivos</h3>
+                        <p class="card-texto">
+                            Quanto menor a renda familiar, maior o desconto em passagens aéreas, 
+                            rodoviárias e ferroviárias. Famílias com renda per capita de até 
+                            meio salário mínimo podem receber até 80% de desconto.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/1.jpg" alt="Família em hospedagem">
+                    </div>
+                    <div class="card-conteudo">
+                        <div class="card-badge card-badge-amarelo">Até 70% OFF</div>
+                        <h3 class="card-titulo">Hospedagem Reduzida</h3>
+                        <p class="card-texto">
+                            Rede nacional de hotéis, pousadas e albergues parceiros oferece 
+                            descontos de 40% a 70% para participantes do programa, facilitando 
+                            estadias confortáveis em todo o território nacional.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/2.jpg" alt="Família em experiências turísticas">
+                    </div>
+                    <div class="card-conteudo">
+                        <div class="card-badge card-badge-amarelo">Benefícios Extras</div>
+                        <h3 class="card-titulo">Alimentação e Lazer</h3>
+                        <p class="card-texto">
+                            Restaurantes e estabelecimentos turísticos credenciados oferecem 
+                            descontos especiais, além de ingresso reduzido em museus, parques 
+                            e atrações culturais.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-imagem">
+                        <img src="./img/3.jpg" alt="Família unida viajando">
+                    </div>
+                    <div class="card-conteudo">
+                        <div class="card-badge card-badge-amarelo">Família Toda</div>
+                        <h3 class="card-titulo">Código Familiar</h3>
+                        <p class="card-texto">
+                            Um único código permite que todos os membros da família cadastrada 
+                            viajem juntos, incluindo dependentes menores de 18 anos e pessoas 
+                            com deficiência sem limite de idade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos em Destaque -->
+    <section id="destinos" class="secao secao-cinza destinos-carousel">
+        <div class="container">
+            <div class="secao-titulo-destaque">
+                <h2>Destinos em Destaque</h2>
+                <p>Conheça alguns dos destinos mais procurados pelos participantes do programa</p>
+            </div>
+        </div>
+            
+        <div class="carousel-container">
+            <div class="destino-card">
+                <img src="./img/fernando.jpg" alt="Fernando de Noronha" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria praias">NORDESTE</span>
+                    <h3 class="destino-nome">Fernando de Noronha</h3>
+                    <p class="destino-estado">Pernambuco</p>
+                    <p class="destino-descricao">
+                        Arquipélago paradisíaco com praias de águas cristalinas e vida marinha exuberante.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destino-card">
+                <img src="./img/salva.jpg" alt="Salvador" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria cultura">NORDESTE</span>
+                    <h3 class="destino-nome">Salvador</h3>
+                    <p class="destino-estado">Bahia</p>
+                    <p class="destino-descricao">
+                        Centro histórico Patrimônio da Humanidade com cultura afro-brasileira única.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destino-card">
+                <img src="./img/pantanal.jpg" alt="Pantanal" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria natureza">CENTRO-OESTE</span>
+                    <h3 class="destino-nome">Pantanal</h3>
+                    <p class="destino-estado">Mato Grosso do Sul</p>
+                    <p class="destino-descricao">
+                        Maior planície alagável do mundo, santuário de biodiversidade única.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destino-card">
+                <img src="./img/ouro1.jpg" alt="Ouro Preto" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria historia">SUDESTE</span>
+                    <h3 class="destino-nome">Ouro Preto</h3>
+                    <p class="destino-estado">Minas Gerais</p>
+                    <p class="destino-descricao">
+                        Cidade histórica colonial com arquitetura barroca preservada.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destino-card">
+                <img src="./img/floresta.jpg" alt="Amazônia" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria ecoturismo">NORTE</span>
+                    <h3 class="destino-nome">Floresta Amazônica</h3>
+                    <p class="destino-estado">Amazonas</p>
+                    <p class="destino-descricao">
+                        Maior floresta tropical do planeta com biodiversidade incomparável.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destino-card">
+                <img src="./img/Foz.jpg" alt="Cataratas do Iguaçu" class="destino-card-imagem">
+                <div class="destino-card-overlay">
+                    <span class="destino-categoria natureza">SUL</span>
+                    <h3 class="destino-nome">Cataratas do Iguaçu</h3>
+                    <p class="destino-estado">Paraná</p>
+                    <p class="destino-descricao">
+                        Uma das maiores quedas d'água do mundo, Patrimônio Natural da Humanidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="secao secao-cinza depoimentos-carousel">
+        <div class="container">
+            <h2 class="texto-centralizado">Histórias de Quem Já Viajou</h2>
+            <p class="texto-centralizado texto-destaque mb-3">
+                Veja o que dizem as famílias que realizaram seus sonhos através do Programa Viaja +
+            </p>
+        </div>
+            
+        <div class="carousel-container">
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    Nunca imaginei que minha família poderia conhecer as Cataratas do Iguaçu. 
+                    Com o desconto de 80%, conseguimos viajar todos juntos. Meus filhos ficaram 
+                    maravilhados com a natureza. Foi a viagem mais emocionante das nossas vidas!
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">MS</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">Maria Santos</div>
+                        <div class="depoimento-localizacao">São Paulo, SP</div>
+                        <div class="depoimento-badge">Faixa 1 - 80% desconto</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    O Programa Viaja + transformou nossa relação familiar. Levei minha mãe 
+                    para conhecer Salvador, cidade que ela sempre sonhou visitar. O processo foi 
+                    simples e os descontos realmente funcionaram. Estamos planejando a próxima viagem!
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">JO</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">João Oliveira</div>
+                        <div class="depoimento-localizacao">Belo Horizonte, MG</div>
+                        <div class="depoimento-badge">Faixa 2 - 65% desconto</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    Como professora, meu salário sempre foi apertado. Graças ao programa, pude 
+                    realizar o sonho de conhecer a Amazônia com meu esposo. A experiência foi 
+                    única e o atendimento nos hotéis parceiros foi excelente. Recomendo muito!
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">AC</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">Ana Cristina</div>
+                        <div class="depoimento-localizacao">Curitiba, PR</div>
+                        <div class="depoimento-badge">Faixa 2 - 65% desconto</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    Levei meus três filhos para conhecer o Nordeste. Em Jericoacoara, eles viram 
+                    o mar pela primeira vez. A alegria no rosto deles não tem preço. O programa 
+                    realmente cumpre o que promete e facilita o acesso ao turismo para todos.
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">RL</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">Roberto Lima</div>
+                        <div class="depoimento-localizacao">Goiânia, GO</div>
+                        <div class="depoimento-badge">Faixa 1 - 80% desconto</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    Sou aposentada e sempre tive vontade de viajar, mas achava impossível. 
+                    O Viaja + me deu essa oportunidade. Já conheci Ouro Preto, Gramado 
+                    e Bonito. Cada viagem foi especial e segura. Obrigada, Governo Federal!
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">LC</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">Lucia Costa</div>
+                        <div class="depoimento-localizacao">Recife, PE</div>
+                        <div class="depoimento-badge">Faixa 2 - 65% desconto</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="depoimento">
+                <p class="depoimento-texto">
+                    Minha família participou do programa e visitamos o Pantanal. Ver os animais 
+                    na natureza foi educativo para as crianças. O desconto de 50% tornou viável 
+                    uma viagem que parecia cara demais. Voltaremos com certeza!
+                </p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-avatar">CF</div>
+                    <div class="depoimento-info">
+                        <div class="depoimento-nome">Carlos Ferreira</div>
+                        <div class="depoimento-localizacao">Rio de Janeiro, RJ</div>
+                        <div class="depoimento-badge">Faixa 3 - 50% desconto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action final -->
+    <section id="cadastro" class="secao secao-azul">
+        <div class="container texto-centralizado">
+            <h2>Comece sua Jornada Hoje</h2>
+            <p class="hero-subtitulo">
+                Faça parte do maior programa de democratização do turismo do Brasil
+            </p>
+            <p class="mb-3" style="color: rgba(255, 255, 255, 0.9);">
+                O cadastro é gratuito, rápido e você pode começar a planejar sua próxima 
+                viagem em família agora mesmo. Conheça o Brasil com o apoio do Governo Federal.
+            </p>
+            <div class="btn-grupo">
+                <a href="#cadastro" class="btn btn-amarelo">Fazer Meu Cadastro</a>
+                <a href="#calculadora" class="btn btn-outline">Calcular Meu Desconto</a>
+                <a href="#destinos" class="btn btn-outline">Ver Destinos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <!-- Sobre -->
+                <div class="footer-secao">
+                    <h3>Sobre o Programa</h3>
+                    <p>
+                        O Viaja + é uma iniciativa do Governo Federal para democratizar
+                        o acesso ao turismo interno brasileiro, fortalecendo a economia local
+                        e promovendo inclusão social.
+                    </p>
+                </div>
+               
+                <!-- Links úteis -->
+                <div class="footer-secao">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#inicio">Página Inicial</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#participar">Como Participar</a></li>
+                        <li><a href="#cadastro">Fazer Cadastro</a></li>
+                        <li><a href="#calculadora">Calculadora</a></li>
+                    </ul>
+                </div>
+               
+                <!-- Contato -->
+                <div class="footer-secao">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li>Central de Atendimento: 0800-123-4567</li>
+                        <li>E-mail: contato@viajarmais.gov.br</li>
+                        <li>Horário: Seg a Sex, 8h às 18h</li>
+                        <li>Ouvidoria: ouvidoria@viajarmais.gov.br</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa Viaja + - Governo Federal do Brasil. Todos os direitos reservados.</p>
+                <p>Este é um projeto institucional fictício desenvolvido para fins demonstrativos.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

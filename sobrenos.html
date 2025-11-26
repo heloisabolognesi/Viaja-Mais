@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a equipe do Programa Viaja + - Governo Federal do Brasil">
+    <title>Nossa Equipe - Programa Viaja +</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .valor-icon-card {
+            background: var(--cor-branco);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .valor-icon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .valor-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--cor-azul-governo), var(--cor-verde-brasil));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        .valor-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        .valor-icon-card h4 {
+            font-size: 1.4rem;
+            color: var(--cor-azul-governo);
+            margin-bottom: 1rem;
+        }
+
+        .valor-icon-card p {
+            font-size: 1rem;
+            color: var(--cor-texto-medio);
+            line-height: 1.7;
+        }
+
+        /* Gradiente preto sobre a imagem de capa */
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-imagem">
+                    <img src="./img/logo.png" alt="Viaja +" class="logo-programa">
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" onclick="toggleMenu()"></div>
+            
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html" class="ativo">Nossa Equipe</a></li>
+                    <li><a href="viagens.html">Destinos</a></li>
+                    <li><a href="como-participar.html">Como Participar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-principal').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-principal').classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+
+    <main>
+        <section class="hero-background" style="background-image: url('./img/equipe-senai.png');">
+            <div class="hero-conteudo">
+                <h1 class="hero-titulo">Nossa Equipe</h1>
+                <p class="hero-subtitulo">
+                    Conheça quem faz o Programa Viaja + acontecer
+                </p>
+                <p class="hero-descricao">
+                    Uma equipe dedicada e comprometida em democratizar o turismo interno brasileiro
+                    e proporcionar experiências inesquecíveis para todas as famílias.
+                </p>
+            </div>
+        </section>
+
+        <section id="equipe" class="secao-equipe">
+            <h2>Nossos Profissionais</h2>
+           
+            <div class="equipe-grid">
+                <div class="membro-card">
+                    <img src="./img/diogocortado.jpeg" class="membro-avatar-img" alt="Foto de Diogo Ferrata">
+                    <div class="membro-info">
+                        <h3 class="membro-nome">Diogo Ferrata</h3>
+                        <p class="membro-cargo">Coordenador Geral</p>
+                        <p class="membro-descricao">
+                            Responsável pela coordenação estratégica do programa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <img src="./img/lauracortado.jpeg" class="membro-avatar-img" alt="Foto de Maria Laura Carezzato">
+                    <div class="membro-info">
+                        <h3 class="membro-nome">Maria Laura Carezzato</h3>
+                        <p class="membro-cargo">Gerente de Parcerias</p>
+                        <p class="membro-descricao">
+                            Lidera o desenvolvimento de parcerias nacionais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <img src="./img/aroncortado.jpeg" class="membro-avatar-img" alt="Foto de Aron Maestá">
+                    <div class="membro-info">
+                        <h3 class="membro-nome">Aron Maestá</h3>
+                        <p class="membro-cargo">Gerente de Tecnologia</p>
+                        <p class="membro-descricao">
+                            Desenvolve e mantém a plataforma digital.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="membro-card">
+                    <img src="./img/Heloisa.jpg" class="membro-avatar-img" alt="Foto de Heloisa Sabino">
+                    <div class="membro-info">
+                        <h3 class="membro-nome">Heloisa Sabino</h3>
+                        <p class="membro-cargo">Coordenadora de Comunicação</p>
+                        <p class="membro-descricao">
+                            Coordena as estratégias de comunicação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2 class="texto-centralizado">Como Desenvolvemos Nossos Projetos</h2>
+                <p class="texto-centralizado mb-3">
+                    Nosso processo de trabalho é estruturado para garantir qualidade e eficiência em cada etapa
+                </p>
+                
+                <div class="grid grid-4 mt-3">
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Etapa 1</div>
+                            <h4 class="card-titulo">Pesquisa e Análise</h4>
+                            <p class="card-texto">
+                                Iniciamos cada projeto com uma pesquisa aprofundada das necessidades 
+                                dos participantes e análise de dados para identificar oportunidades.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Etapa 2</div>
+                            <h4 class="card-titulo">Planejamento</h4>
+                            <p class="card-texto">
+                                Com base nas análises, elaboramos planos detalhados com metas claras, 
+                                cronogramas definidos e recursos necessários para execução.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Etapa 3</div>
+                            <h4 class="card-titulo">Desenvolvimento</h4>
+                            <p class="card-texto">
+                                Nossa equipe multidisciplinar trabalha de forma integrada, 
+                                utilizando metodologias ágeis para desenvolver soluções eficientes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Etapa 4</div>
+                            <h4 class="card-titulo">Implementação</h4>
+                            <p class="card-texto">
+                                Após testes rigorosos, implementamos as soluções de forma gradual, 
+                                monitorando resultados e realizando ajustes necessários.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-cinza">
+            <div class="container">
+                <h2 class="texto-centralizado">Nossos Valores no Trabalho</h2>
+                <p class="texto-centralizado mb-3">
+                    Princípios que guiam nossas ações e decisões todos os dias
+                </p>
+                
+                <div class="valores-grid mt-3">
+                    <div class="valor-icon-card">
+                        <div class="valor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h4>Transparência</h4>
+                        <p>
+                            Mantemos processos claros e comunicação aberta com todos os envolvidos, 
+                            garantindo confiança e credibilidade em cada ação que realizamos.
+                        </p>
+                    </div>
+                    
+                    <div class="valor-icon-card">
+                        <div class="valor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h4>Inovação</h4>
+                        <p>
+                            Buscamos constantemente novas formas de melhorar nossos serviços, 
+                            adotando tecnologias e métodos que beneficiem os participantes.
+                        </p>
+                    </div>
+                    
+                    <div class="valor-icon-card">
+                        <div class="valor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <h4>Compromisso</h4>
+                        <p>
+                            Dedicamos nosso melhor para atender às famílias brasileiras, 
+                            trabalhando com paixão para realizar o sonho de viajar pelo Brasil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container texto-centralizado">
+                <h2>Faça Parte do Programa</h2>
+                <p class="mb-3">
+                    Cadastre-se agora e comece a viajar pelo Brasil com descontos exclusivos
+                </p>
+                <div class="btn-grupo">
+                    <a href="cadastro.html" class="btn btn-primario">Fazer Cadastro</a>
+                    <a href="como-participar.html" class="btn btn-primario" style="background: #0056D2; color: #fff;">Como Participar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
+                    <h3>Sobre o Programa</h3>
+                    <p>
+                        O Viaja + é uma iniciativa do Governo Federal para democratizar 
+                        o acesso ao turismo interno brasileiro.
+                    </p>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="viagens.html">Destinos</a></li>
+                        <li><a href="como-participar.html">Como Participar</a></li>
+                        <li><a href="cadastro.html">Fazer Cadastro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li>Central: 0800-123-4567</li>
+                        <li>contato@viajarmais.gov.br</li>
+                        <li>Seg a Sex, 8h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa Viaja + - Governo Federal do Brasil.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda os critérios, regras e o passo a passo para participar do Programa Viaja +">
+    <title>Como Participar - Programa Viaja +</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gradiente preto sobre a imagem de capa */
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-imagem">
+                    <img src="./img/logo.png" alt="Viaja +" class="logo-programa">
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" onclick="toggleMenu()"></div>
+            
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Nossa Equipe</a></li>
+                    <li><a href="viagens.html">Destinos</a></li>
+                    <li><a href="como-participar.html" class="ativo">Como Participar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-principal').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-principal').classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Cabeçalho da página -->
+        <section class="hero-background" style="background-image: url('./img/Como\ Participar..jpg');">
+            <div class="carousel-slide"><img src="./img/teste.jpg" alt="Mapa do Brasil com destinos turísticos"></div>
+            <div class="hero-conteudo">
+                <h1 class="hero-titulo">Como Participar</h1>
+                <p class="hero-subtitulo">
+                    Entenda os critérios e o processo de cadastro
+                </p>
+                <p class="hero-descricao">    
+                    O Programa Viaja + é aberto a todas as famílias brasileiras, com benefícios 
+                    progressivos baseados na renda familiar per capita.
+                </p>
+            </div>
+        </section>
+
+        <!-- Critérios de elegibilidade -->
+        <section class="secao">
+            <div class="container">
+                <h2 class="texto-centralizado">Critérios de Elegibilidade</h2>
+                <p class="texto-centralizado mb-3">
+                    Qualquer cidadão brasileiro pode participar do programa
+                </p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Requisitos Básicos</h3>
+                            <ul style="list-style: disc; margin-left: 1.5rem;">
+                                <li style="margin-bottom: 0.5rem;">Ser brasileiro nato ou naturalizado</li>
+                                <li style="margin-bottom: 0.5rem;">Ter CPF ativo e regular</li>
+                                <li style="margin-bottom: 0.5rem;">Residir no território nacional</li>
+                                <li style="margin-bottom: 0.5rem;">Ter idade mínima de 18 anos para cadastro</li>
+                                <li style="margin-bottom: 0.5rem;">Declarar renda familiar comprovável</li>
+                                <li style="margin-bottom: 0.5rem;">Não possuir pendências com a Receita Federal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Documentação Necessária</h3>
+                            <ul style="list-style: disc; margin-left: 1.5rem;">
+                                <li style="margin-bottom: 0.5rem;">CPF do titular e dependentes</li>
+                                <li style="margin-bottom: 0.5rem;">Documento de identidade (RG ou CNH)</li>
+                                <li style="margin-bottom: 0.5rem;">Comprovante de residência atualizado</li>
+                                <li style="margin-bottom: 0.5rem;">Declaração de renda ou IR (se houver)</li>
+                                <li style="margin-bottom: 0.5rem;">Certidão de nascimento dos dependentes</li>
+                                <li style="margin-bottom: 0.5rem;">Dados bancários para possíveis reembolsos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faixas de renda e descontos -->
+        <section id="criterios" class="secao secao-cinza">
+            <div class="container">
+                <h2 class="texto-centralizado">Faixas de Renda e Descontos</h2>
+                <p class="texto-centralizado mb-3">
+                    Os descontos são aplicados de forma progressiva conforme a renda per capita familiar
+                </p>
+                
+                <div class="grid grid-4">
+                    <!-- Faixa 1 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Faixa 1</div>
+                            <h3 class="card-titulo">Até R$ 660,00</h3>
+                            <p class="card-texto">
+                                Renda per capita de até meio salário mínimo
+                            </p>
+                            <p class="texto-destaque" style="font-size: 2rem; color: var(--cor-verde-brasil);">80%</p>
+                            <p style="color: var(--cor-texto-medio);">de desconto em passagens, hospedagem e alimentação</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Faixa 2 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Faixa 2</div>
+                            <h3 class="card-titulo">R$ 661 a R$ 1.320</h3>
+                            <p class="card-texto">
+                                Renda per capita entre 0,5 e 1 salário mínimo
+                            </p>
+                            <p class="texto-destaque" style="font-size: 2rem; color: var(--cor-verde-brasil);">65%</p>
+                            <p style="color: var(--cor-texto-medio);">de desconto em passagens, hospedagem e alimentação</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Faixa 3 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Faixa 3</div>
+                            <h3 class="card-titulo">R$ 1.321 a R$ 2.640</h3>
+                            <p class="card-texto">
+                                Renda per capita entre 1 e 2 salários mínimos
+                            </p>
+                            <p class="texto-destaque" style="font-size: 2rem; color: var(--cor-verde-brasil);">50%</p>
+                            <p style="color: var(--cor-texto-medio);">de desconto em passagens, hospedagem e alimentação</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Faixa 4 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Faixa 4</div>
+                            <h3 class="card-titulo">Acima de R$ 2.640</h3>
+                            <p class="card-texto">
+                                Renda per capita acima de 2 salários mínimos
+                            </p>
+                            <p class="texto-destaque" style="font-size: 2rem; color: var(--cor-verde-brasil);">35%</p>
+                            <p style="color: var(--cor-texto-medio);">de desconto em passagens, hospedagem e alimentação</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-3" style="background-color: var(--cor-branco); padding: var(--espacamento-md); border-radius: 8px; border-left: 4px solid var(--cor-azul-governo);">
+                    <h4>Como é calculada a renda per capita?</h4>
+                    <p>
+                        A renda per capita familiar é calculada dividindo a soma de todos os rendimentos 
+                        da família pelo número total de membros. Exemplo: uma família de 4 pessoas com 
+                        renda total de R$ 3.000,00 tem renda per capita de R$ 750,00 (Faixa 2).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Passo a passo -->
+        <section class="secao secao-cinza">
+            <div class="container">
+                <h2 class="texto-centralizado">Passo a Passo para Participar</h2>
+                <p class="texto-centralizado mb-3">
+                    Siga estas etapas simples para começar a viajar com desconto
+                </p>
+                
+                <div class="grid grid-4">
+                    <!-- Passo 1 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Passo 1</div>
+                            <h4 class="card-titulo">Cadastro Nacional</h4>
+                            <p class="card-texto">
+                                Realize seu cadastro informando CPF, renda familiar e composição 
+                                do núcleo familiar. O processo é totalmente digital e gratuito.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 2 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Passo 2</div>
+                            <h4 class="card-titulo">Análise de Elegibilidade</h4>
+                            <p class="card-texto">
+                                O sistema calcula automaticamente seu percentual de desconto 
+                                baseado na renda per capita familiar declarada.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 3 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Passo 3</div>
+                            <h4 class="card-titulo">Escolha seu Destino</h4>
+                            <p class="card-texto">
+                                Navegue pelos destinos parceiros em todas as regiões do Brasil 
+                                e escolha onde sua família quer viajar.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 4 -->
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <div class="card-badge">Passo 4</div>
+                            <h4 class="card-titulo">Descontos Aplicados</h4>
+                            <p class="card-texto">
+                                Receba descontos em passagens, hospedagem e alimentação de acordo 
+                                com sua faixa de renda. Viaje pagando menos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="texto-centralizado mt-3">
+                    <a href="#criterios" class="btn btn-secundario">Veja os Critérios Completos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regras e condições -->
+        <section class="secao">
+            <div class="container">
+                <h2 class="texto-centralizado">Regras e Condições do Programa</h2>
+                
+                <div class="mt-3">
+                    <div class="card mb-2">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Uso do Código Familiar</h3>
+                            <p class="card-texto">
+                                O código familiar permite viagens em grupo com todos os membros cadastrados. 
+                                Todos devem viajar juntos para usufruir dos descontos. Viagens individuais 
+                                de dependentes menores de idade não são permitidas sem a presença do 
+                                responsável titular.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-2">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Atualização de Dados</h3>
+                            <p class="card-texto">
+                                É obrigatório atualizar os dados cadastrais anualmente ou sempre que houver 
+                                mudança significativa na renda familiar. A falta de atualização pode resultar 
+                                na suspensão temporária dos benefícios até regularização.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-2">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Limite de Viagens</h3>
+                            <p class="card-texto">
+                                Não há limite de viagens por ano, mas cada família pode usufruir de até 
+                                30 dias acumulados de hospedagem com desconto por ano civil. Este limite 
+                                busca garantir que mais famílias possam participar do programa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Penalidades por Informações Falsas</h3>
+                            <p class="card-texto">
+                                A prestação de informações falsas ou documentos fraudulentos resulta no 
+                                cancelamento imediato do cadastro, impedimento de nova inscrição por 5 anos 
+                                e possível ação judicial conforme legislação vigente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perguntas frequentes -->
+        <section class="secao">
+            <div class="container">
+                <h2 class="texto-centralizado">Perguntas Frequentes</h2>
+                
+                <div class="mt-3">
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-md); border-radius: 8px; margin-bottom: var(--espacamento-sm);">
+                        <h4>Posso incluir dependentes maiores de idade?</h4>
+                        <p style="margin-bottom: 0;">
+                            Sim, dependentes maiores de idade podem ser incluídos desde que comprovem 
+                            dependência financeira (estudantes universitários até 24 anos ou pessoas 
+                            com deficiência sem limite de idade).
+                        </p>
+                    </div>
+                    
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-md); border-radius: 8px; margin-bottom: var(--espacamento-sm);">
+                        <h4>Os descontos são cumulativos com outras promoções?</h4>
+                        <p style="margin-bottom: 0;">
+                            Não, os descontos do Programa Viaja + não são cumulativos com outras 
+                            promoções ou programas de fidelidade. Prevalece o maior desconto disponível.
+                        </p>
+                    </div>
+                    
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-md); border-radius: 8px; margin-bottom: var(--espacamento-sm);">
+                        <h4>Preciso renovar meu cadastro anualmente?</h4>
+                        <p style="margin-bottom: 0;">
+                            O cadastro não precisa ser renovado, mas os dados devem ser atualizados 
+                            anualmente. Você receberá um lembrete por e-mail quando chegar o período 
+                            de atualização.
+                        </p>
+                    </div>
+                    
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-md); border-radius: 8px;">
+                        <h4>Como funciona para trabalhadores autônomos ou informais?</h4>
+                        <p style="margin-bottom: 0;">
+                            Trabalhadores autônomos e informais podem declarar renda estimada mensal. 
+                            O sistema pode solicitar extratos bancários ou outras comprovações para 
+                            validação dos dados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="secao secao-azul">
+            <div class="container texto-centralizado">
+                <h2>Pronto para Começar?</h2>
+                <p class="mb-3">
+                    Faça seu cadastro agora e comece a planejar sua próxima viagem em família
+                </p>
+                <div class="btn-grupo">
+                    <a href="cadastro.html" class="btn btn-primario">Fazer Cadastro Agora</a>
+                    <a href="calculadora.html" class="btn btn-outline">Calcular Meu Desconto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
+                    <h3>Sobre o Programa</h3>
+                    <p>
+                        O Viaja + é uma iniciativa do Governo Federal para democratizar 
+                        o acesso ao turismo interno brasileiro.
+                    </p>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="viagens.html">Destinos</a></li>
+                        <li><a href="como-participar.html">Como Participar</a></li>
+                        <li><a href="cadastro.html">Fazer Cadastro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li>Central: 0800-123-4567</li>
+                        <li>contato@viajarmais.gov.br</li>
+                        <li>Seg a Sex, 8h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa Viaja + - Governo Federal do Brasil.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

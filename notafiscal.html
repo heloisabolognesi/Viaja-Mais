@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprovante de participação no Programa Viaja +">
+    <title>Nota Fiscal - Programa Viaja +</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-imagem">
+                    <img src="./img/logo.png" alt="Viaja +" class="logo-programa">
+                </div>
+            </div>
+            
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="viagens.html">Destinos</a></li>
+                    <li><a href="como-participar.html">Como Participar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Introdução -->
+        <section class="secao secao-azul">
+            <div class="container texto-centralizado">
+                <h1>Comprovante de Desconto</h1>
+                <p class="texto-destaque">
+                    Modelo de nota fiscal governamental do Programa Viaja +
+                </p>
+                <p>
+                    Este é um exemplo visual de como seria o comprovante de desconto emitido 
+                    para viagens realizadas através do programa.
+                </p>
+            </div>
+        </section>
+
+        <!-- Nota Fiscal -->
+        <section class="secao">
+            <div class="container">
+                <!-- Aviso -->
+                <div style="background-color: #FFF3CD; border-left: 4px solid var(--cor-amarelo-brasil); padding: var(--espacamento-md); margin-bottom: var(--espacamento-lg); border-radius: 4px;">
+                    <h3 style="color: #856404; margin-bottom: var(--espacamento-xs);">Documento de Demonstração</h3>
+                    <p style="color: #856404; margin-bottom: 0;">
+                        Este é um modelo visual de nota fiscal para fins demonstrativos. 
+                        Em uma implementação real, este documento seria gerado automaticamente 
+                        após cada viagem realizada pelo participante.
+                    </p>
+                </div>
+                
+                <!-- Documento da Nota Fiscal -->
+                <div class="nota-fiscal">
+                    <!-- Cabeçalho -->
+                    <div class="nota-fiscal-header">
+                        <div style="margin-bottom: var(--espacamento-sm);">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: var(--cor-verde-brasil);">
+                                GOVERNO FEDERAL DO BRASIL
+                            </div>
+                            <div style="font-size: 0.875rem; color: var(--cor-azul-governo);">
+                                Ministério do Turismo
+                            </div>
+                        </div>
+                        
+                        <h2 class="nota-fiscal-title">PROGRAMA VIAJA +</h2>
+                        <div style="font-size: 1rem; font-weight: 600; margin-bottom: var(--espacamento-xs);">
+                            COMPROVANTE DE BENEFÍCIO E DESCONTO
+                        </div>
+                        <div style="font-size: 0.875rem; color: var(--cor-texto-medio);">
+                            Nota Fiscal Eletrônica de Serviços
+                        </div>
+                    </div>
+                    
+                    <!-- Informações do documento -->
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-sm); margin-bottom: var(--espacamento-md); border-radius: 4px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--espacamento-sm);">
+                            <div>
+                                <strong>Número do Documento:</strong><br>
+                                NF-VM-2024-000123456
+                            </div>
+                            <div>
+                                <strong>Data de Emissão:</strong><br>
+                                15/11/2025 às 14:32:18
+                            </div>
+                            <div>
+                                <strong>Código de Verificação:</strong><br>
+                                A7F3-9D2E-4B1C-8F6A
+                            </div>
+                            <div>
+                                <strong>Validade:</strong><br>
+                                15/11/2030
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dados do participante -->
+                    <div style="border: 1px solid var(--cor-borda); padding: var(--espacamento-md); margin-bottom: var(--espacamento-md); background-color: var(--cor-branco);">
+                        <h3 style="font-size: 0.9rem; margin-bottom: var(--espacamento-sm); border-bottom: 1px solid var(--cor-borda); padding-bottom: var(--espacamento-xs);">
+                            DADOS DO BENEFICIÁRIO
+                        </h3>
+                        <div class="nota-fiscal-info">
+                            <div>
+                                <strong>Nome:</strong><br>
+                                Maria da Silva Santos
+                            </div>
+                            <div>
+                                <strong>CPF:</strong><br>
+                                123.456.789-00
+                            </div>
+                            <div>
+                                <strong>Código Familiar:</strong><br>
+                                VM-2024-987654
+                            </div>
+                            <div>
+                                <strong>Faixa de Desconto:</strong><br>
+                                Faixa 2 - 65%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dados da viagem -->
+                    <div style="border: 1px solid var(--cor-borda); padding: var(--espacamento-md); margin-bottom: var(--espacamento-md); background-color: var(--cor-branco);">
+                        <h3 style="font-size: 0.9rem; margin-bottom: var(--espacamento-sm); border-bottom: 1px solid var(--cor-borda); padding-bottom: var(--espacamento-xs);">
+                            DETALHES DA VIAGEM
+                        </h3>
+                        <div class="nota-fiscal-info">
+                            <div>
+                                <strong>Destino:</strong><br>
+                                Foz do Iguaçu - PR
+                            </div>
+                            <div>
+                                <strong>Período:</strong><br>
+                                20/11/2025 a 25/11/2025
+                            </div>
+                            <div>
+                                <strong>Participantes:</strong><br>
+                                4 pessoas (titular + 3 dependentes)
+                            </div>
+                            <div>
+                                <strong>Duração:</strong><br>
+                                5 dias / 4 noites
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Discriminação de serviços -->
+                    <div style="margin-bottom: var(--espacamento-md);">
+                        <h3 style="font-size: 0.9rem; margin-bottom: var(--espacamento-sm); border-bottom: 2px solid var(--cor-azul-escuro); padding-bottom: var(--espacamento-xs);">
+                            DISCRIMINAÇÃO DOS SERVIÇOS E DESCONTOS
+                        </h3>
+                        
+                        <table class="nota-fiscal-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%;">Descrição</th>
+                                    <th style="text-align: right;">Valor Integral</th>
+                                    <th style="text-align: center;">Desconto</th>
+                                    <th style="text-align: right;">Valor Final</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Passagens Aéreas (4 pessoas)<br>
+                                        <small>São Paulo (GRU) - Foz do Iguaçu (IGU)<br>
+                                        Ida e volta - Cia. Aérea XYZ</small>
+                                    </td>
+                                    <td style="text-align: right;">R$ 3.200,00</td>
+                                    <td style="text-align: center;">65%</td>
+                                    <td style="text-align: right;">R$ 1.120,00</td>
+                                </tr>
+                                <tr style="background-color: var(--cor-cinza-claro);">
+                                    <td>Hospedagem (4 diárias)<br>
+                                        <small>Hotel das Cataratas - Quarto Família<br>
+                                        Café da manhã incluso</small>
+                                    </td>
+                                    <td style="text-align: right;">R$ 2.400,00</td>
+                                    <td style="text-align: center;">65%</td>
+                                    <td style="text-align: right;">R$ 840,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Alimentação<br>
+                                        <small>Restaurantes credenciados<br>
+                                        10 refeições principais</small>
+                                    </td>
+                                    <td style="text-align: right;">R$ 800,00</td>
+                                    <td style="text-align: center;">65%</td>
+                                    <td style="text-align: right;">R$ 280,00</td>
+                                </tr>
+                                <tr style="background-color: var(--cor-cinza-claro);">
+                                    <td>Ingressos Turísticos<br>
+                                        <small>Parque Nacional do Iguaçu<br>
+                                        Parque das Aves - 4 pessoas</small>
+                                    </td>
+                                    <td style="text-align: right;">R$ 400,00</td>
+                                    <td style="text-align: center;">65%</td>
+                                    <td style="text-align: right;">R$ 140,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Totais -->
+                    <div style="background-color: var(--cor-cinza-claro); padding: var(--espacamento-md); border-radius: 4px; margin-bottom: var(--espacamento-md);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--espacamento-sm); margin-bottom: var(--espacamento-sm);">
+                            <div style="text-align: right;"><strong>Valor Total dos Serviços:</strong></div>
+                            <div style="text-align: right;">R$ 6.800,00</div>
+                            
+                            <div style="text-align: right;"><strong>Total de Descontos (65%):</strong></div>
+                            <div style="text-align: right; color: var(--cor-verde-brasil); font-weight: 700;">- R$ 4.420,00</div>
+                        </div>
+                        
+                        <div style="border-top: 2px solid var(--cor-azul-escuro); padding-top: var(--espacamento-sm); margin-top: var(--espacamento-sm);">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                                <div style="text-align: right; font-size: 1.25rem;"><strong>VALOR PAGO PELA FAMÍLIA:</strong></div>
+                                <div style="text-align: right; font-size: 1.5rem; font-weight: 700; color: var(--cor-azul-escuro);">R$ 2.380,00</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Economia gerada -->
+                    <div style="background-color: #D1FAE5; border-left: 4px solid var(--cor-verde-brasil); padding: var(--espacamento-md); margin-bottom: var(--espacamento-md);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 0.875rem; margin-bottom: var(--espacamento-xs);">
+                                ECONOMIA TOTAL GERADA PELO PROGRAMA
+                            </div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--cor-verde-brasil);">
+                                R$ 4.420,00
+                            </div>
+                            <div style="font-size: 0.875rem; margin-top: var(--espacamento-xs);">
+                                Esta família economizou 65% no valor total da viagem
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Informações legais -->
+                    <div style="border-top: 2px solid var(--cor-borda); padding-top: var(--espacamento-md); margin-top: var(--espacamento-md); font-size: 0.75rem;">
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            <strong>INFORMAÇÕES LEGAIS:</strong>
+                        </p>
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Este documento comprova a utilização de benefícios do Programa Viaja +, 
+                            iniciativa do Governo Federal Brasileiro instituída pela Lei Nº XX.XXX/2024.
+                        </p>
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Os descontos foram aplicados conforme a faixa de renda familiar cadastrada 
+                            e validada no sistema nacional de participantes.
+                        </p>
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Este comprovante pode ser utilizado para fins de declaração de imposto de renda 
+                            e comprovação de gastos com turismo doméstico.
+                        </p>
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Autenticidade digital: Este documento possui assinatura eletrônica e pode ser 
+                            verificado através do código informado no site oficial www.viajarmais.gov.br
+                        </p>
+                    </div>
+                    
+                    <!-- Rodapé do documento -->
+                    <div style="border-top: 1px solid var(--cor-borda); margin-top: var(--espacamento-md); padding-top: var(--espacamento-md); text-align: center; font-size: 0.75rem; color: var(--cor-texto-medio);">
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Programa Viaja + - Ministério do Turismo<br>
+                            Governo Federal do Brasil
+                        </p>
+                        <p style="margin-bottom: var(--espacamento-xs);">
+                            Central de Atendimento: 0800-123-4567 | contato@viajarmais.gov.br
+                        </p>
+                        <p style="margin-bottom: 0;">
+                            Documento emitido eletronicamente e válido sem assinatura física
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Botão de impressão (visual) -->
+                <div class="texto-centralizado mt-3">
+                    <button class="btn btn-secundario" onclick="window.print()">
+                        Imprimir Comprovante
+                    </button>
+                    <p style="margin-top: var(--espacamento-sm); color: var(--cor-texto-medio); font-size: 0.875rem;">
+                        Em uma implementação real, esta página seria gerada dinamicamente com os dados 
+                        reais de cada viagem realizada pelo participante
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações adicionais -->
+        <section class="secao secao-cinza">
+            <div class="container">
+                <h2 class="texto-centralizado">Sobre o Comprovante de Desconto</h2>
+                
+                <div class="grid grid-2 mt-3">
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Quando é Emitido</h3>
+                            <p class="card-texto">
+                                O comprovante é gerado automaticamente após a conclusão de cada viagem 
+                                realizada através do Programa Viaja +. O documento é enviado por 
+                                e-mail e fica disponível para consulta no portal do participante.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Para que Serve</h3>
+                            <p class="card-texto">
+                                Serve como comprovante oficial de despesas com turismo, pode ser usado 
+                                na declaração de imposto de renda, e documenta a economia gerada pelo 
+                                programa para fins de prestação de contas familiar.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Validade Legal</h3>
+                            <p class="card-texto">
+                                O documento possui validade jurídica e é reconhecido pela Receita Federal. 
+                                Contém código de verificação digital que permite autenticar sua 
+                                autenticidade no site oficial do programa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Armazenamento</h3>
+                            <p class="card-texto">
+                                Todos os comprovantes ficam armazenados no sistema por 5 anos e podem 
+                                ser acessados a qualquer momento através da área do participante. 
+                                Recomenda-se também o download e armazenamento local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="secao secao-azul">
+            <div class="container texto-centralizado">
+                <h2>Comece a Viajar e Economizar</h2>
+                <p class="mb-3">
+                    Faça seu cadastro e em breve você receberá comprovantes como este após suas viagens
+                </p>
+                <div class="btn-grupo">
+                    <a href="cadastro.html" class="btn btn-primario">Fazer Cadastro</a>
+                    <a href="viagens.html" class="btn btn-outline">Ver Destinos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
+                    <h3>Sobre o Programa</h3>
+                    <p>
+                        O Viaja + é uma iniciativa do Governo Federal para democratizar 
+                        o acesso ao turismo interno brasileiro.
+                    </p>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="viagens.html">Destinos</a></li>
+                        <li><a href="como-participar.html">Como Participar</a></li>
+                        <li><a href="cadastro.html">Fazer Cadastro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li>Central: 0800-123-4567</li>
+                        <li>contato@viajarmais.gov.br</li>
+                        <li>Seg a Sex, 8h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa Viaja + - Governo Federal do Brasil.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
