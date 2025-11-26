@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra destinos incríveis em todas as regiões do Brasil com descontos do Programa Viaja +">
+    <title>Destinos - Programa Viaja +</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gradiente preto sobre a imagem de capa */
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-imagem">
+                    <img src="./img/logo.png" alt="Viaja +" class="logo-programa">
+                </div>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-overlay" onclick="toggleMenu()"></div>
+            
+            <nav class="nav-principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobrenos.html">Nossa Equipe</a></li>
+                    <li><a href="viagens.html" class="ativo">Destinos</a></li>
+                    <li><a href="como-participar.html">Como Participar</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-principal').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+            document.body.style.overflow = document.querySelector('.nav-principal').classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Cabeçalho da página -->
+        <section class="hero-background" style="background-image: url('./img/mapa.jpg');">
+            <div class="carousel-slide"><img src="./img/8.jpg" alt="Mapa do Brasil com destinos turísticos"></div>
+        <div class="carousel-slide"><img src="./img/5.jpg" alt="Cristo Redentor - Rio de Janeiro"></div>
+        <div class="carousel-slide"><img src="./img/bulsola.jpg" alt="Fernando de Noronha - Praias paradisíacas"></div>
+        <div class="carousel-slide"><img src="./img/9.jpg" alt="Floresta Amazônica"></div>
+
+            <div class="hero-conteudo">
+                <h1 class="hero-titulo">Destinos Turísticos</h1>
+                <p class="hero-subtitulo">
+                    Conheça o Brasil de Norte a Sul
+                </p>
+                <p class="hero-descricao">
+                    Mais de 850 destinos parceiros em todas as regiões brasileiras aguardam sua visita. 
+                    Escolha seu próximo destino e viaje com até 80% de desconto.
+                </p>
+            </div>
+        </section>
+
+        <!-- Região Norte -->
+        <section class="secao">
+            <div class="container">
+                <h2>Região Norte</h2>
+                <p class="mb-2">Explore a majestosa Floresta Amazônica e sua biodiversidade única</p>
+                
+                <div class="grid grid-3">
+                    <!-- Destino 1 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Manaus -.jpg" alt="Floresta Amazônica">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Norte</div>
+                            <h3 class="card-titulo">Manaus - AM</h3>
+                            <p class="card-texto">
+                                Descubra a capital do Amazonas, com o famoso Teatro Amazonas, 
+                                o encontro das águas dos rios Negro e Solimões, e experiências 
+                                únicas na maior floresta tropical do mundo.
+                            </p>
+                            <p class="texto-destaque">Até 75% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 2 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Belém - PA.jpg" alt="Belém do Pará">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Norte</div>
+                            <h3 class="card-titulo">Belém - PA</h3>
+                            <p class="card-texto">
+                                Visite a Cidade das Mangueiras, experimente a culinária paraense 
+                                no Mercado Ver-o-Peso e conheça o Círio de Nazaré, uma das maiores 
+                                manifestações religiosas do Brasil.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 3 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Jalapão.jpg" alt="Jalapão">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Norte</div>
+                            <h3 class="card-titulo">Jalapão - TO</h3>
+                            <p class="card-texto">
+                                Aventure-se pelo Parque Estadual do Jalapão, com dunas douradas, 
+                                fervedouros cristalinos e cachoeiras deslumbrantes em meio ao cerrado.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Nordeste -->
+        <section class="secao secao-cinza">
+            <div class="container">
+                <h2>Região Nordeste</h2>
+                <p class="mb-2">Praias paradisíacas, cultura rica e hospitalidade incomparável</p>
+                
+                <div class="grid grid-3">
+                    <!-- Destino 4 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Noronha.jpg" alt="Fernando de Noronha">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Nordeste</div>
+                            <h3 class="card-titulo">Fernando de Noronha - PE</h3>
+                            <p class="card-texto">
+                                Paraíso ecológico com praias de águas cristalinas, vida marinha 
+                                exuberante e paisagens de tirar o fôlego. Ideal para mergulho 
+                                e contemplação da natureza.
+                            </p>
+                            <p class="texto-destaque">Até 65% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 5 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/salva.jpg" alt="Salvador">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Nordeste</div>
+                            <h3 class="card-titulo">Salvador - BA</h3>
+                            <p class="card-texto">
+                                Primeira capital do Brasil, repleta de história, arquitetura 
+                                colonial no Pelourinho, praias urbanas e a mais autêntica 
+                                culinária baiana.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 6 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Jerioca.jpg" alt="Jericoacoara">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Nordeste</div>
+                            <h3 class="card-titulo">Jericoacoara - CE</h3>
+                            <p class="card-texto">
+                                Vila de pescadores transformada em destino turístico mundial, 
+                                com dunas, lagoas e a famosa Pedra Furada. Perfeito para 
+                                relaxamento e esportes aquáticos.
+                            </p>
+                            <p class="texto-destaque">Até 68% de desconto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Centro-Oeste -->
+        <section class="secao">
+            <div class="container">
+                <h2>Região Centro-Oeste</h2>
+                <p class="mb-2">Natureza selvagem, ecoturismo e belezas do cerrado</p>
+                
+                <div class="grid grid-3">
+                    <!-- Destino 7 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/pantanal.jpg" alt="Pantanal">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Centro-Oeste</div>
+                            <h3 class="card-titulo">Pantanal - MS/MT</h3>
+                            <p class="card-texto">
+                                Maior planície alagável do mundo, refúgio de onças-pintadas, 
+                                araras e jacarés. Experiência única de observação da fauna e 
+                                flora brasileiras.
+                            </p>
+                            <p class="texto-destaque">Até 75% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 8 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Chapada dos Veadeiros - GO.jpg" alt="Chapada dos Veadeiros">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Centro-Oeste</div>
+                            <h3 class="card-titulo">Chapada dos Veadeiros - GO</h3>
+                            <p class="card-texto">
+                                Parque Nacional com cachoeiras espetaculares, trilhas em meio 
+                                ao cerrado, piscinas naturais e formações rochosas milenares. 
+                                Destino espiritual e de aventura.
+                            </p>
+                            <p class="texto-destaque">Até 72% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 9 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Bonito - MS.jpg" alt="Bonito">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Centro-Oeste</div>
+                            <h3 class="card-titulo">Bonito - MS</h3>
+                            <p class="card-texto">
+                                Capital do ecoturismo brasileiro, com rios de águas cristalinas, 
+                                grutas, cavernas e flutuação entre peixes coloridos. Natureza 
+                                preservada e infraestrutura turística de excelência.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Sudeste -->
+        <section class="secao secao-cinza">
+            <div class="container">
+                <h2>Região Sudeste</h2>
+                <p class="mb-2">História, cultura, praias e montanhas em uma única região</p>
+                
+                <div class="grid grid-3">
+                    <!-- Destino 10 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/rIO.jpg" alt="Rio de Janeiro">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sudeste</div>
+                            <h3 class="card-titulo">Rio de Janeiro - RJ</h3>
+                            <p class="card-texto">
+                                Cidade Maravilhosa com Cristo Redentor, Pão de Açúcar, praias 
+                                icônicas como Copacabana e Ipanema, e o carnaval mais famoso 
+                                do mundo.
+                            </p>
+                            <p class="texto-destaque">Até 68% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 11 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/OURO.jpg" alt="Ouro Preto">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sudeste</div>
+                            <h3 class="card-titulo">Ouro Preto - MG</h3>
+                            <p class="card-texto">
+                                Cidade histórica patrimônio da humanidade, com arquitetura 
+                                colonial barroca, igrejas ricamente decoradas e museus que 
+                                contam a história do ciclo do ouro no Brasil.
+                            </p>
+                            <p class="texto-destaque">Até 73% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 12 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Ilhabela - SP.jpg" alt="Ilhabela">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sudeste</div>
+                            <h3 class="card-titulo">Ilhabela - SP</h3>
+                            <p class="card-texto">
+                                Arquipélago com mais de 40 praias, trilhas em mata atlântica, 
+                                cachoeiras e excelente infraestrutura turística. Ideal para 
+                                famílias e amantes de natureza.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Região Sul -->
+        <section class="secao">
+            <div class="container">
+                <h2>Região Sul</h2>
+                <p class="mb-2">Clima europeu, vinícolas, serras e cataratas impressionantes</p>
+                
+                <div class="grid grid-3">
+                    <!-- Destino 13 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Foz.jpg" alt="Cataratas do Iguaçu">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sul</div>
+                            <h3 class="card-titulo">Foz do Iguaçu - PR</h3>
+                            <p class="card-texto">
+                                Lar das espetaculares Cataratas do Iguaçu, uma das sete 
+                                maravilhas naturais do mundo. Também oferece o Parque das 
+                                Aves e a Usina de Itaipu.
+                            </p>
+                            <p class="texto-destaque">Até 72% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 14 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Gramado - RS.jpg" alt="Gramado">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sul</div>
+                            <h3 class="card-titulo">Gramado - RS</h3>
+                            <p class="card-texto">
+                                Charme europeu no Brasil, famosa pelo Natal Luz, arquitetura 
+                                germânica, chocolate artesanal e belas paisagens serranas. 
+                                Destino romântico e familiar.
+                            </p>
+                            <p class="texto-destaque">Até 68% de desconto</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Destino 15 -->
+                    <div class="card">
+                        <div class="card-imagem">
+                            <img src="./img/Florianópolis.jpg" alt="Florianópolis">
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="card-badge">Sul</div>
+                            <h3 class="card-titulo">Florianópolis - SC</h3>
+                            <p class="card-texto">
+                                Ilha da Magia com mais de 40 praias para todos os gostos, 
+                                lagoas, dunas, trilhas e ótima qualidade de vida. Centro 
+                                histórico preservado e gastronomia variada.
+                            </p>
+                            <p class="texto-destaque">Até 70% de desconto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="secao secao-azul">
+            <div class="container texto-centralizado">
+                <h2>Pronto para Viajar?</h2>
+                <p class="mb-3">
+                    Faça seu cadastro e comece a planejar sua próxima viagem com descontos especiais
+                </p>
+                <div class="btn-grupo">
+                    <a href="cadastro.html" class="btn btn-primario">Fazer Cadastro</a>
+                    <a href="calculadora.html" class="btn btn-outline">Calcular Desconto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-secao">
+                    <h3>Sobre o Programa</h3>
+                    <p>
+                        O Viaja + é uma iniciativa do Governo Federal para democratizar 
+                        o acesso ao turismo interno brasileiro.
+                    </p>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="viagens.html">Destinos</a></li>
+                        <li><a href="como-participar.html">Como Participar</a></li>
+                        <li><a href="cadastro.html">Fazer Cadastro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-secao">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li>Central: 0800-123-4567</li>
+                        <li>contato@viajarmais.gov.br</li>
+                        <li>Seg a Sex, 8h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Programa Viaja + - Governo Federal do Brasil.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

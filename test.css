@@ -1,0 +1,30 @@
+.side-mini {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 180px;
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.side-mini h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #ff9800;
+}
+
+.side-mini p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.side-mini hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+}
